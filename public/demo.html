@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot Widget — Demo</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 700px; margin: 80px auto; padding: 0 20px; color: #111; }
+    h1 { font-size: 2rem; margin-bottom: .5rem; }
+    p  { color: #555; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <h1>My Website</h1>
+  <p>This is a demo page. The chat button appears in the bottom-right corner.</p>
+  <p>Click it to start a conversation with the AI assistant.</p>
+
+  <!--
+    This single script tag is all you need to embed the widget on any page.
+    data-server  : URL of your backend (leave empty if same origin)
+    data-title   : text shown in the chat header
+    data-theme   : accent colour
+  -->
+  <script
+    src="/widget.js"
+    data-title="Support Chat"
+    data-theme="#2563eb"
+    data-placeholder="Ask me anything…"
+  ></script>
+</body>
+</html>
